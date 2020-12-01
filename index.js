@@ -26,3 +26,14 @@ const $ = (function () {
   return Constructor;
 
 })();
+
+const btns = new $('button');
+const items = new $('li');
+
+btns.removeClass('btn-blue');
+btns.addClass('btn-purple');
+
+console.log('$.toArray', btns.toArray());
+console.log('$.toArray', items.toArray());
+console.log('$.first', btns.first());
+console.log('$.last', btns.last());
